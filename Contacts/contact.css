@@ -1,10 +1,9 @@
 @font-face {
     font-family: 'Amoria';
-    src: url(./fonts/AMORIA.otf);
+    src: url('../fonts/AMORIA.otf'); /* CORRECT: Goes up, then into fonts/ */
     font-style: normal; 
     font-weight: normal; 
 }
-
 
 
 
