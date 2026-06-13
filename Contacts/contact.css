@@ -1,10 +1,9 @@
 @font-face {
-    font-family: 'Amoria';
-    src: url('../fonts/AMORIA.otf'); /* CORRECT: Goes up, then into fonts/ */
-    font-style: normal; 
+    font-family: 'Latenza Script';
+    src: url('LatenzaScript_PERSONAL_USE_ONLY.otf');
     font-weight: normal; 
+    font-style: normal; 
 }
-
 
 
 html , body{
@@ -65,7 +64,7 @@ body {
    flex: 1; 
     flex-direction: column;
     min-height: 100vh;
-    font-family: 'Amoria', sans-serif;
+    font-family: 'Latenza Script', sans-serif;
     background: radial-gradient(circle at 70% 20%, #3d0000, #0a0a0a);
     background-attachment: fixed;
     color: #ff3333;
