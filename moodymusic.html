@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moody Music | Find Your Vibe</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="songs.js" defer></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+   <nav class="navbar">
+    <div class="nav-brand">Moody Music</div>
+    <ul class="nav-links">
+        <!-- These paths will now work from both home and the PQ folder -->
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/PQ/PersonalityQuiz.html">Personality Quiz</a></li>
+        <li><a href="/Contacts/contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+    <main class="container">
+        <h1 class="title">Mood Playlist Generator</h1>
+
+        <!-- Personality Quiz Section -->
+        <section id="personality" class="card">
+            <h2>Music Personality Quiz</h2>
+            <p>Take our quick quiz to find your unique sound profile!</p>
+            <button class="btn-primary" onclick="alert('Quiz logic coming soon!')">Start Quiz</button>
+        </section>
+
+        <section id="feeling-input" class="card">
+            <h2>What's your mood today?</h2>
+            <form id="mood-form">
+                <div class="form-group">
+                    <select id="mood-selector" required title="Select your mood">
+                        <option value="">Select your mood</option>
+                        <option value="happy">Happy 😁</option>
+                        <option value="chill">Chilled Out 😎</option>
+                        <option value="sad">Sad 😓</option>
+                        <option value="energetic">Energetic 🤪</option>
+                    </select>
+                    <button id="generate-playlist" type="submit">Generate Playlist</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="playlist-results" class="card card-hidden">
+            <h2>Your Playlist</h2>
+            <div class="filter-container">
+                <div class="search-box">
+                    <input type="text" id="song-search" placeholder="Filter track or artist..." autocomplete="off">
+                </div>
+                <div class="sort-box">
+                    <label for="sort-selector" class="sr-only">Sort playlist</label>
+                    <select id="sort-selector" aria-label="Sort playlist">
+                        <option value="az">A-Z</option>
+                        <option value="newest">Newest</option>
+                    </select>
+                </div>
+            </div>
+            <ul id="playlist"></ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Moody Music by KingRosa.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moody Music | Personality Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+
+   <body class="home-theme">
+    <nav class="navbar">
+    <div class="nav-brand">Moody Music</div>
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li> 
+        <li><a href="PQ/PersonalityQuiz.html">Personality Quiz</a></li>
+        <li><a href="./Contacts/contact.html">Contact</a></li>
+    </ul>
+</nav>
+    </body>
+
+    <main class="container">
+        <h1 class="title">Mood Playlist Generator</h1>
+
+        <section id="personality" class="card">
+            <h2 id="question-text">Ready to find your musical personality?</h2>
+            <div id="options-container">
+<button class="btn-primary" onclick="window.location.href='./PQ/PersonalityQuiz.html'">
+    Start Quiz
+</button>            </div>
+        </section>
+
+        <section id="results-section" class="card card-hidden">
+            <div id="results-content"></div>
+            <button onclick="location.reload()" class="btn-primary">Restart Quiz</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Moody Music by KingRosa. All Rights Reserved</p>
+    </footer>
+</body>
+</html>
